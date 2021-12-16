@@ -46,16 +46,18 @@
             </form>
             <div class="p-5">
                 <h4>Karte versenden per E-Mail</h4>
+                <span>*(kostenlos)</span>
                 <form method="post" name="Form">
                     <h2>Login</h2>
                     <input class="shadow-sm p-1 mb-5 bg-body rounded" type="Email" name="sender"
-                        placeholder="Sender123@gmail.com">
+                        placeholder="Absender@gmail.com">
                     <input class="shadow-sm p-1 mb-5 bg-body rounded" type="Password" name="password"
-                        placeholder="type password here"><br>
+                        placeholder="Passwort hier eingeben"><br>
                     <input class="shadow-sm p-1 mb-5 bg-body rounded" type="Email" name="reciever"
-                        placeholder="Reciever321@gmail.com">
-                    <span>*(kostenlos)</span>
-                    <button id="mailSenden" onclick="sendEmail()" type="button" class="btn btn-success mt-2"
+                        placeholder="Empfänger@gmail.com">
+                    
+                    <button id="mailSenden" onclick="sendEmail()" type="button"
+                        class="btn btn-success shadow-sm p-2 rounded"
                         data-bs-toggle="tooltip" data-bs-placement="top" title="Karte versenden per E-Mail"><i
                             aria-hidden="true" class="fas fa-at"></i>
                         Senden</button>
