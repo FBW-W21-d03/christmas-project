@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/266eebd455.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_3mQVOmqIPyrO5529BsIeT");
+        })();
+    </script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <section class="d-flex card mx-auto" style="width: 38rem;">
+            <h2 class="bg-danger">Verschicken Sie Weihnachtsgrüße</h2>
+            <form action="post" name="Karte">
+                <figure class="shadow p-3 mb-5 bg-body rounded">
+                    <img src="./images/weihnachtswuensche_karte_das_beste_bist-du_confetti-800x533.jpg" alt="card"
+                        width="570vw" height="auto">
+                </figure>
+                <audio class="mx-auto" src="80s-last-christmas-pop-9294.mp3" controls autoplay></audio>
+                <figcaption class="p-3 mt-3">
+                    <h3>Liebe Grüße</h3>
+                    <p>Der Duft von Kerzen erfüllt das Zimmer, ohne Dich ist alles noch viel schlimmer. Bist weit weg in
+                        der Ferne,
+                        denk bitte daran, ich hab Dich gerne. <br /><br />
+                        Ich wünsche Dir ein frohes Weihnachtsfest!</p>
+                </figcaption>
+            </form>
+            <div class="p-5">
+                <h4>Karte versenden per E-Mail</h4>
+                <form method="post" name="Form">
+                    <h2>Login</h2>
+                    <input type="Email" name="sender" placeholder="Sender123@gmail.com"><br>
+                    <input type="Password" name="password" placeholder="type password here"><br><br>
+                    <input type="Email" name="reciever" placeholder="Reciever321@gmail.com"><br>
+                    <span>*(kostenlos)</span>
+                    <button id="mailSenden" onclick="sendEmail()" type="button" class="btn btn-success mt-2"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Karte versenden per E-Mail"><i
+                            aria-hidden="true" class="fas fa-at"></i>
+                        Senden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
