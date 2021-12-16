@@ -48,9 +48,12 @@
                 <h4>Karte versenden per E-Mail</h4>
                 <form method="post" name="Form">
                     <h2>Login</h2>
-                    <input type="Email" name="sender" placeholder="Sender123@gmail.com"><br>
-                    <input type="Password" name="password" placeholder="type password here"><br><br>
-                    <input type="Email" name="reciever" placeholder="Reciever321@gmail.com"><br>
+                    <input class="shadow-sm p-1 mb-5 bg-body rounded" type="Email" name="sender"
+                        placeholder="Sender123@gmail.com">
+                    <input class="shadow-sm p-1 mb-5 bg-body rounded" type="Password" name="password"
+                        placeholder="type password here"><br>
+                    <input class="shadow-sm p-1 mb-5 bg-body rounded" type="Email" name="reciever"
+                        placeholder="Reciever321@gmail.com">
                     <span>*(kostenlos)</span>
                     <button id="mailSenden" onclick="sendEmail()" type="button" class="btn btn-success mt-2"
                         data-bs-toggle="tooltip" data-bs-placement="top" title="Karte versenden per E-Mail"><i
