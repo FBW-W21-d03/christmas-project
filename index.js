@@ -13,7 +13,7 @@ function sendEmail() {
     From: sender,
     Subject: "Check Email Sending",
     //Body: content,
-	Body: message,
+	Body: message
   }).then(function (message) {
     if ((send = true)) {
       alert("Email not sent successfully");
