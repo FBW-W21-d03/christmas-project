@@ -8,9 +8,9 @@ body {
 
     border: brown;
     width: auto;
-    height: 195px;
-    margin-left: 80px;
-    margin-top: 150px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 120px;
     position: relative;
     display: inline-block;
     border-radius: 50%;
@@ -61,6 +61,10 @@ h1 {
 }
 
 #name {
-    font-family: 'Times New Roman', Times, serif;
-    color: brown;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(41, 6, 6);
+    font-size: 40px;
+}
+p{
+    font-family: 'Karla', sans-serif;
 }
